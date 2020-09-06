@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "montserrat";
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#circle{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    position: absolute;
+    z-index: 999999999;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%,-50%);
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+#back{
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: -9;
+}
+
+#drop{
+    width: 100%;
+    height: 60vh;
+    /* border: 2px solid black; */
+}
+
+#nav{
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+}
+
+#nav>img{
+    width: 120px;
+}
+
+#nav2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    /* background-color: rebeccapurple; */
+    height: 100%;
+}
+
+#nav2>img{
+    width: 80px;
+    margin-top: 10px;
+}
+
+#links
+{
+    display: flex;
+    align-items: center;
+}
+
+#links a{
+    text-decoration: none;
+    margin-left: 30px;
+    text-transform: capitalize;
+    font-size: 12px;
+    color: #aaa8a8;
+}
+
+#text h1{
+    font-family: "playfair-display";
+    font-size: 70px;
+    position: absolute;
+    top: 35%;
+    left: 8%;
+    width: 85%;
+    text-align: center;
+    /* transform: translate(-50%,-50%); */
+}
+
+#background{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    /* border: 2px solid red; */
+}
+
+#ground{
+    width: 250px;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://images.unsplash.com/photo-1596578556487-b03a86bb57d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+}
+
+#background h3{
+    width: 400px;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Gilroy";
+    font-weight: lighter;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#background img{
+    width: 100px;
+}
+
